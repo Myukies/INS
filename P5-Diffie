@@ -1,0 +1,9 @@
+def diffie_hellman(P, G, a, b):
+    x = pow(G, a, P)
+    y = pow(G, b, P)
+    return pow(y, a, P), pow(x, b, P)
+
+if __name__ == '__main__':
+    P, G, a, b = 23, 9, 4, 6
+    ka, kb = diffie_hellman(P, G, a, b)
+    print(f'P: {P}, G: {G}, Alice’s Secret: {a}, Bob’s Secret: {b}, Alice’s Key: {ka}, Bob’s Key: {kb}')

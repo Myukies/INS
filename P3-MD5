@@ -1,0 +1,8 @@
+import hashlib
+
+# Calculate MD5 hashes for two different inputs
+md5_hash1 = hashlib.md5(b'Ismile').digest()
+md5_hash2 = hashlib.md5(b'Esmile').digest()
+
+print("MD5 Hash for 'Ismile':", md5_hash1)
+print("MD5 Hash for 'Esmile':", md5_hash2)
